@@ -5,17 +5,26 @@
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<title>Test page: Don't Panic</title>
 	<style>
-		li {
+/*		li {
 			border: 1px solid green;
+		}*/
+		a {
+			color: red;
 		}
-		li a {
-			color: blue
+		#_tes1{
+			background-color: orange;
 		}
-		div {
+		#exec-bio{
+			background-color: lightgray;
+		}
+		.bio-box{
 			border: 1px solid black;
 		}
-		div a {
+		.bio-box a{
 			color: green;
+		}
+		._tes2{
+			background-color: azure;
 		}
 	</style>
 </head>
@@ -23,7 +32,7 @@
 	<h1>I'm an h1</h1>
 	<ul>
 		<li>
-			<a href="https://example.com/">Link</a>
+			<a id="_tes1" href="https://example.com/">Link</a>
 		</li>
 		<li>
 			<a href="https://example.com/">Link</a>
@@ -33,16 +42,16 @@
 		</li>
 	</ul>
 	<h2>I'm an h2</h2>
-	<div>
+	<div id="exec-bio" class="bio-box">
 			<a href="https://example.com/">I'm a Link</a>
 	</div>
-	<div>
+	<div class="bio-box _tes2">
 			<a href="https://example.com/">I'm a Link</a>
 	</div>
-	<div>
+	<div class="bio-box _tes2">
 			<a href="https://example.com/">I'm a Link</a>
 	</div>
-	<div>
+	<div class="bio-box _tes2">
 			<a href="https://example.com/">I'm a Link</a>
 	</div>
 </body>
