@@ -6,7 +6,22 @@
 	<title>Test page: Don't Panic</title>
 	<style>
 		/*グローバルスタイル*/
-		html {
+		html , body{
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-size: 62.5%;
+		}
+		
+		h1{
+			font-size: 2rem;
+			margin-top: 0;
+		}
+		h2 {
+			font-size: 30px;
+		}
+		h3 {
 
 		}
 		a {
@@ -16,28 +31,26 @@
 
 		}
 
-		h2 {
-			font-size: 30px;
-		}
-		h3 {
-			font-size: 1.5rem;
+		/*ヒーロースタイル*/
+		.full-hero{
+			background-color: #c7dbfc;
+			height: 50vw;
+			width: 50vw;
 		}
 
 		/*SNSスタイル*/
 		.social-link{
-			/*background-color: rgba(150, 150, 150, .5);*/
 			color: rgb(0, 0, 150);
 		}
 
 		/*バイオグラフィースタイル*/
 		.bio-wrapper{
-			font-size: 24px;
+
 		}
 		.bio-box{
 			padding: 2.5em;
 			border: 1px solid black;
-			width: 50%;
-			font-size: 1rem;
+			font-size: 1em;
 		}
 		.bio-copy{
 			font-size: 1rem;
@@ -52,20 +65,23 @@
 </head>
 <body> 
 
-	<h1>
-		I'm an h1
-	</h1>
-	<ul>
-		<li>
-			<a href="https://example.com/" class="social-link">Link</a>
-		</li>
-		<li>
-			<a href="https://example.com/" class="social-link">Link</a>
-		</li>
-		<li>
-			<a href="https://example.com/" class="social-link">Link</a>
-		</li>
-	</ul>
+	<div class="full-hero hero-home">
+		<h1>
+			I'm an h1
+		</h1>
+		<ul>
+			<li>
+				<a href="https://example.com/" class="social-link">Link</a>
+			</li>
+			<li>
+				<a href="https://example.com/" class="social-link">Link</a>
+			</li>
+			<li>
+				<a href="https://example.com/" class="social-link">Link</a>
+			</li>
+		</ul>
+	</div>
+
 	<h2>I'm an h2</h2>
 
 	<div class="bio-wrapper">
