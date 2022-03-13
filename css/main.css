@@ -10,6 +10,7 @@
   h1{
     font-size: 7vw;
     margin-top: 0;
+    position: relative;
   }
   a {
     color: #f00;
@@ -112,7 +113,9 @@
     background-color: #c7dbfc;
     height: 50vh;
   }
-
+  .full-hero > h1 {
+    height: 10vh;
+  }
 /*SNSスタイル*/
   .social-list{
     list-style: none;
