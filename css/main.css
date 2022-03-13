@@ -10,6 +10,7 @@
   a {
     color: #f00;
   }
+
   /*ヘッダースタイル*/
   .header-nav{
     float: right;
@@ -19,6 +20,11 @@
     display: inline-block;
     margin-left: 1em;
   }
+  .header-nav > li + li{
+    border-left: 1px solid rgba(0, 0, 0, .3);
+    padding-left: 1em;
+  }
+
   .header-nav a {
     color: #000;
     font-size: .8rem;
@@ -34,6 +40,14 @@
   .header-logo:active{
     opacity: .5;
   }
+
+  .header-nav >li:first-child a{
+    color: #ed6e2f;
+  }
+  .header-nav >li:first-child a:hover{
+    color: #000;
+  }
+
 
   /*ヒーロースタイル*/
   .full-hero{
