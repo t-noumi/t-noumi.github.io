@@ -103,6 +103,9 @@
   .footer h3 span{
     color: #aaa;
   }
+  .footer-list{
+    margin-top: 10px;
+  }
 
 /*ヒーロースタイル*/
   .full-hero{
