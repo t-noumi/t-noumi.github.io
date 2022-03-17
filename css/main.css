@@ -76,7 +76,9 @@
   .header-nav a {
     color: #fff;
   }
-  .nav-links a {
+  .nav-links a ,
+  .drop-trigger,
+  .show-mobile-menu{
     font-size: .8rem;
     font-weight: bold;
     text-decoration: none;
@@ -169,14 +171,15 @@
       background-color: rgba(0,0,0,0.1);
       color: #333;
     }
-  /*フッターでは非表示*/
-    .footer .dropdown:hover .drop-menu,
-    .footer .drop-trigger:after {
+
+  /*モバイルメニュースタイル*/
+    .mobile-menu-check,
+    .show-mobile-menu {
       display: none;
     }
-    .footer .drop-trigger {
-      padding-right: 0;
-    }
+
+
+
 
 /*フッタースタイル*/
   .footer {
@@ -184,6 +187,7 @@
     background-color: #000;
     padding: 10vh 0 15vh;
     text-align: center;
+    /*width: 100%;*/
   }
   .footer-logo img{
     width: 50px;
@@ -206,6 +210,56 @@
   .footer-list{
     margin-top: 10px;
   }
+
+  /*フッターでは非表示*/
+     .footer .drop-trigger:after {
+      border: 0.3em solid;
+      border-color:transparent transparent  #fff ;
+      content: "";
+      height: 0;
+      position: absolute;
+      right: 0;
+      top: auto;
+      width: 0;
+    }
+    .footer .dropdown:hover .drop-trigger:after{
+      border-color:transparent transparent #ed6e2f;
+    }
+
+    .footer .drop-menu:before{
+      display: none;
+    }
+    .footer .drop-menu:after{
+      border: .6em solid;
+      border-color: #fff transparent transparent ;
+      content: "";
+      height: 0;
+      position: absolute;
+      right: 1em;
+      bottom: -.1em;
+      width: 0;
+    }
+    .footer .drop-menu{
+      padding:0 0 1em;
+      position: absolute;
+      right: 0;
+      bottom: 1em;
+      z-index: 9;
+    }
+    .footer .drop-menu li{
+      margin: 0;
+      display: block;
+    }
+    .footer .drop-menu a{
+      color: #333;
+      /*display: block;*/
+      font-weight: normal;
+      padding: .5em 2em .5em 1em;
+      text-align: left;
+      text-transform: none;
+      white-space: nowrap;
+    }
+
 
 /*ヒーロースタイル*/
   .full-hero{
