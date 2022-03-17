@@ -1,7 +1,36 @@
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Test page: Don't Panic</title>
+	<!-- initial -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- title -->
+	{% if page.title %}
+		<title>{{ page.title }} | Test Page</title>
+		<meta name="og:title" content="{{ page.title }} | Test Page">
+	{% else %}
+		<title>Test page: Don't Panic</title>
+		<meta name="og:title" content="Test page: Don't Panic">
+	{% endif %}
+
+	<!-- description -->
+	{% if page.description %}
+		<meta name="description" content="{{ page.description }}">
+		<meta name="og:description" content="{{ page.description }}">
+	{% else %}
+		<meta name="description" content="This is a dangerous site">
+		<meta name="og:description" content="This is a dangerous site">
+	{% endif %}
+
+	<!-- icon -->
+	<link rel="icon" href="/favicon.png">
+	<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+	<!-- font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+	<!-- css -->
 	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" href="/css/main.css">
 	<link rel="stylesheet" href="/css/home.css">

@@ -7,8 +7,12 @@
   body{
     display: flex;
     flex-direction: column;
-    font-family: helvetica, arial, sans;
+    font-family: 'Open Snas', helvetica, arial, sans;
     min-height: 100vh;
+  }
+
+  h1, h2,h3,h4,h5,h6{
+    font-family: 'Raleway', helvetica, sans;
   }
   h1{
     font-size: 7vw;
